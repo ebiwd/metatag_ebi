@@ -26,9 +26,6 @@ function metatag_ebi_metatag_info() {
     'description' => '',
     'class' => 'DrupalTextMetaTag',
     'group' => 'ebi',
-    'element' => array(
-      '#theme' => 'metatag_property',
-    ),
   );
 
   $info['tags']['ebi:owner'] = array(
@@ -59,17 +56,17 @@ function metatag_ebi_metatag_info() {
     'multiple' => TRUE,
   ) + $tag_info_defaults;
 
-  $info['tags']['ebi-localmasthead-color'] = array(
+  $info['tags']['ebi:localmasthead-color'] = array(
     'label' => t('Local masthead colour'),
     'description' => t('Local header background colour. format: #091314'),
     'weight' => ++$weight,
     'multiple' => TRUE,
   ) + $tag_info_defaults;
 
-  $info['tags']['ebi-localmasthead-image'] = array(
+  $info['tags']['ebi:localmasthead-image'] = array(
     'label' => t('Local masthead image'),
-    'description' => t('Local header custom backgrond image. <a href="@sample-page">Sample here</a>.', array(
-      '@sample-page' => 'http://drupal.org/handbooks')),
+    'description' => t('Full http:// https:// // or relative URL to local header custom backgrond image. <a href="@sample-page">Sample here</a>.', array(
+      '@sample-page' => '//ebiwd.github.io/EBI-Framework/images/backgrounds/embl-ebi-background-4.jpg')),
     'weight' => ++$weight,
     'multiple' => TRUE,
   ) + $tag_info_defaults;
