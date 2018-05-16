@@ -56,14 +56,14 @@ function metatag_ebi_metatag_info() {
     'multiple' => TRUE,
   ) + $tag_info_defaults;
 
-  $info['tags']['ebi:localmasthead-color'] = array(
+  $info['tags']['ebi:masthead-color'] = array(
     'label' => t('Local masthead colour'),
     'description' => t('Local header background colour. format: #091314'),
     'weight' => ++$weight,
     'multiple' => TRUE,
   ) + $tag_info_defaults;
 
-  $info['tags']['ebi:localmasthead-image'] = array(
+  $info['tags']['ebi:masthead-image'] = array(
     'label' => t('Local masthead image'),
     'description' => t('Full http:// https:// // or relative URL to local header custom backgrond image. <a href="@sample-page">Sample here</a>.', array(
       '@sample-page' => '//ebiwd.github.io/EBI-Framework/images/backgrounds/embl-ebi-background-4.jpg')),
