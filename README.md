@@ -1,6 +1,8 @@
 # metatag_ebi module
 Drupal 7 metatag submodule to support EBI content lifecycles, in this format: http://ebiwd.github.io/EBI-Framework/#metacopy
 
+Compatible with version 1.2 and 1.3 of the [EBI Visual Framework theme for Drupal](https://github.com/ebiwd/drupal_7_ebi_framework).
+
 ## Tags
 
 ### Content lifecycle management
@@ -15,6 +17,6 @@ These will be programatically accessed to help ensure content stays current and 
 ### Visual tags
 These tags allow you to modify the look/feel of the local navigation bar on the page.
 ```
-<meta name="ebi:localmasthead-color" content="#000">
-<meta name="ebi:localmasthead-image" content="http://i.stack.imgur.com/7Wzpq.jpg">
+<meta name="ebi:masthead-color" content="#000">
+<meta name="ebi:masthead-image" content="http://i.stack.imgur.com/7Wzpq.jpg">
 ```
